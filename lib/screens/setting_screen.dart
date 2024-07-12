@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rbfunfacts/widgets/theme_switcher.dart';
 
 class SettingScreen extends StatefulWidget {
   const SettingScreen({super.key});
@@ -13,6 +14,11 @@ class _SettingScreenState extends State<SettingScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Setting"),
+      ),
+      body: Column(
+        children: [
+          ThemeSwitcher(),
+        ],
       ),
     );
   }
